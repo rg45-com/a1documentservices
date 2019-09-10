@@ -1,35 +1,40 @@
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <h5 class="text-center mb0">A #1 Document Services, LLC</h5>
+            <p class="mb0 pb5 font-base-400 sidebar-subtitle text-center">
+              <a href="tel:{{ site.phone_link }}">{{ site.phone_disp }}</a>
+            </p>
+            <p class="mb0 pb10 font-base-400 sidebar-subtitle text-center">
+              <a href="tel:{{ site.phone_link }}">{{ site.email }}</a>
+            </p>
+      </div>
+      <div class="col-lg-8 text-right">
+        <ul class="list-inline">
+            <li class="list-inline-item">
+                <a href="{{ "/mobile-notary-public-las-vegas.html" | relative_url }}">Mobile Notary</a>
             </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
+            <li class="list-inline-item">
+                <a href="{{ "/income-tax-services.html" | relative_url }}">Income Tax Prep</a>
+            </li>
+            <li class="list-inline-item">
+                <a href="{{ "/bookkeeping.html" | relative_url }}">Bookkeeping</a>
+            </li>
+            <li class="list-inline-item">
+                <a href="{{ "/payroll.html" | relative_url }}">Payroll</a>
+            </li>
+            <li class="list-inline-item">
+                <a href="{{ "/virtual-mailbox.html" | relative_url }}">Mail Service</a>
+            </li>
+            <li class="list-inline-item">
+                <a href="{{ "/fingerprinting.html" | relative_url }}">Fingerprinting</a>
+            </li>
         </ul>
       </div>
-
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
+      <div class="col-sm-12">
+      <p class="small text-center">A #1 Document Services, LLC is bound by the laws of the State of Nevada and cannot backdate documents or notarizations nor provide blank notarizations.  As a Notary Public we are not a representative of either the borrower or lender and therefore cannot render an opinion on the terms of a loan or within a document, nor can we suggest or determine which notorial act is appropriate or required.  Such determinations or suggestions are considered to be unauthorized practice of law. We are not attorneys authorized to practice in this State and are prohibited from providing legal advice or legal representation for any person (NRS240A.150).  We are not CPAs.</p>
       </div>
     </div>
-
   </div>
-
 </footer>

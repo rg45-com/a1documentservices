@@ -7,14 +7,16 @@
 
     {%- include header.html -%}
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
+    <main class="main-content" aria-label="Content">
         {{ content }}
-      </div>
     </main>
 
     {%- include footer.html -%}
 
+    <!--back to top-->
+    <a href="#" class="back-to-top" id="back-to-top"><i class="icon-chevron-up"></i></a>
   </body>
 
+  <script type="text/javascript" src="{{ "/assets/js/plugins/plugins.js" | relative_url }}"></script>
+  <script type="text/javascript" src="{{ "/assets/js/law-firm.custom.js" | relative_url }}"></script>
 </html>

@@ -1,34 +1,374 @@
 ---
 layout: default
 ---
+<!-- hero -->
+<div id="home" class="fullscreen-hero bg-parallax" data-jarallax='{"speed": 0.4}'
+  style='background-image: url("/assets/img/a1docs-hero.jpg")'>
+  <div class="hero-content overlay-darken">
+    <div class="hero-inner">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 col-md-10 text-center mr-auto ml-auto">
+            <h1 class="mb20 text-white display-3">A #1 Document Services, LLC </h1>
+            <h2 class="text-white-gray mb30 lead">
+              Traveling Mobile Notary | Tax &amp; Accounting Services | Commercial Mail Receiving Agency
+            </h2>
+            <div>
+              <a data-scroll href="#services" class="btn btn-lg btn-white mr-3 mb-3">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- /hero -->
 
-<div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
+{%- include free_quotes_banner.html %}
 
-  {{ content }}
+<div class="bg-faded pt50 pb50" id="services">
+  <div class="container">
+    <div class="section-title title-on-faded mb40">
+      <h3 class="text-center">
+        Services Offered
+      </h3>
+    </div>
+    <div class="row">
+      <!--col-->
+      <div class="col-lg-4 mb40">
+        <div class="practice-card">
+          <img src="/assets/img/mobile_notary_logo.png" alt="Mobile Notary Public Services" class="img-fluid">
+          <div class="content-box">
+            <h3>Notary Public Services</h3>
+            <p>
+              We will travel to your home or business, hospitals, nursing homes or anywhere you would like to meet at your convenience to notarize your documents.
+            </p>
+            <a href="#" class="btn btn-link">Learn More</a>
+          </div>
+        </div>
+      </div><!-- /col -->
 
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
+      <!--col-->
+      <div class="col-lg-4 mb40">
+        <div class="practice-card">
+          <img src="/assets/img/income_tax500x333.jpg" alt="Income Tax Services" class="img-fluid">
+          <div class="content-box">
+            <h3>Income Tax Services</h3>
+            <p>
+              A #1 Document Services represents a wide range of tax clients, including: individuals, self-employed, sole proprietors, corporations (C, S, and LLC), partnerships, and Trusts/Estates.
+            </p>
+            <a href="#" class="btn btn-link">Learn More</a>
+          </div>
+        </div>
+      </div><!-- /col -->
 
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-  {%- endif -%}
+      <!--col-->
+      <div class="col-lg-4 mb40">
+        <div class="practice-card">
+          <img src="/assets/img/bookkeeping500x333.jpg" alt="Bookkeeping Services" class="img-fluid">
+          <div class="content-box">
+            <h3>Bookkeeping Services</h3>
+            <p>
+              It is a long established fact that a reader will be distracted by the readable content of a page when
+              looking at its layout.
+            </p>
+            <a href="#" class="btn btn-link">Learn More</a>
+          </div>
+        </div>
+      </div><!-- /col -->
 
+      <!--col-->
+      <div class="col-lg-4 mb40">
+        <div class="practice-card">
+          <img src="/assets/img/payroll-expenses500x333.jpg" alt="Payroll Serivces" class="img-fluid">
+          <div class="content-box">
+            <h3>Payroll Services</h3>
+            <p>
+              Let A #1 Document Services handle your company payroll processing.
+            </p>
+            <a href="#" class="btn btn-link">Learn More</a>
+          </div>
+        </div>
+      </div><!-- /col -->
+
+      <!--col-->
+      <div class="col-lg-4 mb40">
+        <div class="practice-card">
+          <img src="/assets/img/virtual-mailbox500x333.png" alt="Virtual Mailbox Service" class="img-fluid">
+          <div class="content-box">
+            <h3>Virtual Mailbox Service</h3>
+            <p>
+              Our secure cloud-based platform enables you to view and manage your mail anywhere in the world.
+            </p>
+            <a href="#" class="btn btn-link">Learn More</a>
+          </div>
+        </div>
+      </div><!-- /col -->
+
+      <!--col-->
+      <div class="col-lg-4 mb40">
+        <div class="practice-card">
+          <img src="/assets/img/fingerprinting.png" alt="Fingerprinting Services" class="img-fluid">
+          <div class="content-box">
+            <h3>Fingerprinting Services</h3>
+            <p>
+              We can provide fingerprinting services for background checks.
+            </p>
+            <a href="#" class="btn btn-link">Learn More</a>
+          </div>
+        </div>
+      </div><!-- /col -->
+      
+    </div><!-- /row -->
+  </div>
+</div>
+<div class="bg-parallax" data-jarallax='{"speed": 0.4}' style='background-image: url("/assets/img/a1docs-hero.jpg")'>
+  <div class="overlay-darken pt90 pb50">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 text-center  mb40">
+          <h2 class="text-white h1 counter">{{ site.stat_loans }}</h2>
+          <h6 class="text-white">+ Loans Closed</h6>
+        </div>
+        <!--col-->
+        <div class="col-lg-3 col-md-6 text-center  mb40">
+          <p class="text-white h1 counter">550</p>
+          <h6 class="text-white">+ Clients Served</h6>
+        </div>
+        <!--col-->
+        <div class="col-lg-3 col-md-6 text-center  mb40">
+          <h2 class="text-white h1 counter">6</h2>
+          <h6 class="text-white">Notaries Public</h6>
+        </div>
+        <!--col-->
+        <div class="col-lg-3 col-md-6 text-center  mb40">
+          <h2 class="text-white h1 counter">6</h2>
+          <h6 class="text-white">Services Offered</h6>
+        </div>
+        <!--col-->
+      </div>
+    </div>
+  </div><!-- /overlay-darken -->
+</div>
+<!--facts-->
+<div class="container pt90 pb50">
+  <div class="section-title mb70">
+    <h3 class="text-center">Client Testimonials</h3>
+  </div>
+  <div class="row">
+    <div class="col owl-carousel owl-clients owl-theme">
+
+      <div class="item mt40 wow zoomInDown" data-wow-delay=".15s">
+        <div class="client-reviews-card">
+          <div class="client-reviews-content">
+            "Working with A#1 was the best experience. I contacted them to do business for me from out of state. I’m in Michigan and needed papers from someone in Las Vegas. They attended the hearing via phone made sure all the papers were signed and even mailed them back to me the same day. I would recommend them to anyone. Prices were very reasonable."
+          </div>
+          <div class="client-reviews-author">
+            <p class="h5">Bonnie S.</p>
+            <span>Notary Public Customer</span>
+          </div>
+        </div>
+      </div><!-- /item -->
+      
+      <div class="item mt40 wow zoomInDown" data-wow-delay=".2s">
+        <div class="client-reviews-card">
+          <div class="client-reviews-content">
+            "Cheryl was very professional and super sweet! I would recommend her to do your taxes!!!"
+          </div>
+          <div class="client-reviews-author">
+            <p class="h5">Sarah H.</p>
+            <span>Income Tax Prep Customer</span>
+          </div>
+        </div>
+      </div><!-- /item -->
+      
+      <div class="item mt40 wow zoomInDown" data-wow-delay=".2s">
+        <div class="client-reviews-card">
+          <div class="client-reviews-content">
+            "I recently just got my taxes done by Cheryl and couldn't be happier! The process was quick and easy, she answered all of my questions and made everything very simple to understand. i will definitely be using her services again."
+          </div>
+          <div class="client-reviews-author">
+            <p class="h5">Addison K.</p>
+            <span>Income Tax Prep Customer</span>
+          </div>
+        </div>
+      </div><!-- /item -->
+      
+      <div class="item mt40 wow zoomInDown" data-wow-delay=".2s">
+        <div class="client-reviews-card">
+          <div class="client-reviews-content">
+            "A very professional and knowledgeable person who has your tax needs as priority #1! She is now my definite tax preparer for all my future tax needs! What a professional lady she is indeed! I'm so glad to have met her!"
+          </div>
+          <div class="client-reviews-author">
+            <p class="h5">William H.</p>
+            <span>Income Tax Prep Customer</span>
+          </div>
+        </div>
+      </div><!-- /item -->
+      
+      <div class="item mt40 wow zoomInDown" data-wow-delay=".2s">
+        <div class="client-reviews-card">
+          <div class="client-reviews-content">
+            "Carl, thanks for coming out on a weekend to help me with my documents! Dealing with you was pleasant and informative, I will keep your card and refer you to others who need your services."
+          </div>
+          <div class="client-reviews-author">
+            <p class="h5">Lisa W.</p>
+            <span>Notary Public Customer</span>
+          </div>
+        </div>
+      </div><!-- /item -->
+      
+      <div class="item mt40 wow zoomInDown" data-wow-delay=".2s">
+        <div class="client-reviews-card">
+          <div class="client-reviews-content">
+            "Great job! I am self-employed and getting my tax returns done and done right is almost impossible, but not with Cheryl. She did a great job and it was done right!"
+          </div>
+          <div class="client-reviews-author">
+            <p class="h5">Keith S.</p>
+            <span>Income Tax Prep Customer</span>
+          </div>
+        </div>
+      </div><!-- /item -->
+      
+      <div class="item mt40 wow zoomInDown" data-wow-delay=".2s">
+        <div class="client-reviews-card">
+          <div class="client-reviews-content">
+            "I recently used A #1 Document Services for my tax returns. Cheryl was very knowledgeable and found deductions I wasn't aware that I could take. Thanks and I will definitely use your services again."
+          </div>
+          <div class="client-reviews-author">
+            <p class="h5">Kayla D.</p>
+            <span>Income Tax Prep Customer</span>
+          </div>
+        </div>
+      </div><!-- /item -->
+      
+      <div class="item mt40 wow zoomInDown" data-wow-delay=".2s">
+        <div class="client-reviews-card">
+          <div class="client-reviews-content">
+            "Awesome notary! Best notary I have ever used. She is efficient, nice, and professional. Will definitely be the notary I use for all future documents."
+          </div>
+          <div class="client-reviews-author">
+            <p class="h5">Sarah T.</p>
+            <span>Notary Public Customer</span>
+          </div>
+        </div>
+      </div><!-- /item -->
+    </div>
+  </div>
+</div>
+
+<hr class="mb50">
+
+<div class="bg-dark pt90 pb50">
+  <div class="container">
+    <div class="section-title title-on-dark mb40">
+      <h3 class="text-center">
+        Our Notaries
+      </h3>
+    </div>
+    <div class="row">
+      <div class="col mb40">
+        <div class="col owl-carousel owl-notaries owl-theme">
+          
+          <!--item-->
+          <div class="item">
+            <div class="notary-card text-center">
+              <img src="/assets/img/person6.jpg" alt="Carl Ross" class="img-fluid">
+              <div class="content-box">
+                <h5>Carl Ross</h5>
+                <span>Notary Public</span>
+              </div>
+              <ul class="notary-footer list-unstyled">
+                <li class="clearfix">
+                  <a href="tel:{{ site.phone_link }}">{{ site.phone_disp }}</a>
+                </li>
+              </ul>
+            </div>
+          </div><!-- /item-->
+          
+          <!--item-->
+          <div class="item">
+            <div class="notary-card text-center">
+              <img src="/assets/img/person6.jpg" alt="Cheryl Ross" class="img-fluid">
+              <div class="content-box">
+                <h5>Cheryl Ross</h5>
+                <span>Notary Public</span>
+              </div>
+              <ul class="notary-footer list-unstyled">
+                <li class="clearfix">
+                  <a href="tel:{{ site.phone_link }}">{{ site.phone_disp }}</a>
+                </li>
+              </ul>
+            </div>
+          </div><!-- /item-->
+          
+          <!--item-->
+          <div class="item">
+            <div class="notary-card text-center">
+              <img src="/assets/img/person6.jpg" alt="Pam Goldman" class="img-fluid">
+              <div class="content-box">
+                <h5>Pam Goldman</h5>
+                <span>Notary Public</span>
+              </div>
+              <ul class="notary-footer list-unstyled">
+                <li class="clearfix">
+                  <a href="tel:{{ site.phone_link }}">{{ site.phone_disp }}</a>
+                </li>
+              </ul>
+            </div>
+          </div><!-- /item-->
+          
+          <!--item-->
+          <div class="item">
+            <div class="notary-card text-center">
+              <img src="/assets/img/person6.jpg" alt="Hansi Dunn" class="img-fluid">
+              <div class="content-box">
+                <h5>Hansi Dunn</h5>
+                <span>Notary Public</span>
+              </div>
+              <ul class="notary-footer list-unstyled">
+                <li class="clearfix">
+                  <a href="tel:{{ site.phone_link }}">{{ site.phone_disp }}</a>
+                </li>
+              </ul>
+            </div>
+          </div><!-- /item-->
+          
+          <!--item-->
+          <div class="item">
+            <div class="notary-card text-center">
+              <img src="/assets/img/person6.jpg" alt="Helen Memar" class="img-fluid">
+              <div class="content-box">
+                <h5>Helen Memar</h5>
+                <span>Notary Public</span>
+              </div>
+              <ul class="notary-footer list-unstyled">
+                <li class="clearfix">
+                  <a href="tel:{{ site.phone_link }}">{{ site.phone_disp }}</a>
+                </li>
+              </ul>
+            </div>
+          </div><!-- /item-->
+          
+          <!--item-->
+          <div class="item">
+            <div class="notary-card text-center">
+              <img src="/assets/img/person6.jpg" alt="Joyce Showers" class="img-fluid">
+              <div class="content-box">
+                <h5>Joyce Showers</h5>
+                <span>Notary Public</span>
+              </div>
+              <ul class="notary-footer list-unstyled">
+                <li class="clearfix">
+                  <a href="tel:{{ site.phone_link }}">{{ site.phone_disp }}</a>
+                </li>
+              </ul>
+            </div>
+          </div><!-- /item-->
+          
+        </div><!-- /col.owl-carousel -->
+
+      </div>
+      <!--col-->
+    </div>
+  </div>
 </div>
