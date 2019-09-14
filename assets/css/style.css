@@ -1,9 +1,3 @@
-/*
-Assan Law Firm Template
-Version- 3.8
-author - design_mylife
-support - mylifedesign143@gmail.com
-*/
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700");
 @import url("https://fonts.googleapis.com/css?family=Cardo:400,400i,700");
 @font-face {
@@ -1496,8 +1490,8 @@ Sidebar ....
 Footer style
 */
 .footer {
-  padding-top: 90px;
-  padding-bottom: 70px;
+  padding-top: 40px;
+  padding-bottom: 20px;
   background-color: #f9f9f9; }
   .footer h5 {
     color: #666;
@@ -1520,23 +1514,6 @@ Footer style
       color: rgba(0, 0, 0, 0.8); }
       .footer ul.list-inline li a:hover {
         color: #597ba7; }
-
-@media (min-width: 992px) {
-  .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 1005;
-    z-index: 0;
-    width: 100%; 
-    height: 300px;}
-  main.main-content {
-    position: relative;
-    z-index: 3;
-    background-color: #fff;
-    margin-bottom: 245px;
-    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1); } 
-}
 
 @media (max-width: 991px) {
   .navbar .container {
@@ -1596,18 +1573,21 @@ Footer style
   }
 .page-title.notary {
   background-position-y: 25%;
-  background-image: url("/assets/img/nevada-road.jpg")
+  /* background-image: url("/assets/img/nevada-road.jpg") */
+  background-image: url("/assets/img/notary-bg.jpg")
   }
 
 .page-title.taxes {
-  background-position-y: 75%;
-  background-image: url("/assets/img/tax-forms.jpg");
+  background-position-y: 50%;
+  /* background-image: url("/assets/img/tax-forms.jpg"); */
+  background-image: url("/assets/img/taxes-bg.jpg");
   }
 
   .page-title.bookkeeping {
-  background-position-y: 20%;
-  background-position-x: right;
-  background-image: url("/assets/img/bookkeeping.jpg");
+  background-position-y: 50%;
+  background-position-x: 50%;
+  /* background-image: url("/assets/img/bookkeeping.jpg"); */
+  background-image: url("/assets/img/bookkeeping-bg.jpg");
   }
 
   .page-title.payroll {
@@ -1618,14 +1598,178 @@ Footer style
 
   .page-title.mail {
   background-position-y: 50%;
-  background-position-x: 65%;
-  background-image: url("/assets/img/virtual-mailbox500x333.png");
+  background-position-x: right;
+  background-image: url("/assets/img/mailbox-bg.png");
   }
  
   .page-title.fingerprinting {
   background-position-y: 50%;
   background-position-x: 65%;
-  background-image: url("/assets/img/fingerprint.jpg");
+  /* background-image: url("/assets/img/fingerprint.jpg"); */
+  background-image: url("/assets/img/fingerprint-bg.jpg");
   }
 
 
+.service-plan {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.service-plan>div {
+  padding: 16px 0;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.service-plan>div:first-child {
+  border: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.service-plan .title {
+  color: #fff;
+  background-color: #597ba7;
+  font-size: 18px;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+}
+
+.service-plan .info1 {
+  background-color: #f8f8f8;
+  font-weight: bold;
+  font-size: 11px;
+  color: #999;
+}
+
+.service-plan .restriction-value {
+  font-weight: bold;
+  color: #597ba7;
+}
+
+.service-plan .restriction-value i {
+  font-size: 20px !important;
+}
+
+.service-plan .restriction-value.not-offered {
+  color: #aaa !important;
+  font-weight: normal !important;
+}
+
+.service-plan .restriction-desc {
+  font-size: 11px;
+  color: #666;
+}
+
+.service-plan .price1 {
+  background-color: #f8f8f8;
+  font-weight: bold;
+}
+
+.service-plan .price2 {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.service-plan .price3 {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.service-plan .pricing-box {
+  background-color: #f8f8f8;
+  display: table;
+  width: 100%;
+  padding: 0;
+}
+
+.service-plan .pricing-box>div {
+  padding: 20px 0;
+}
+
+.service-plan .pricing-box>div:first-child {
+  border-right: 1px solid #ccc;
+}
+
+.service-plan .pricing-box>div:only-child {
+  border-right: none;
+}
+
+.service-plan .addon {
+  background-color: #f8f8f8;
+}
+
+.service-plan .feature {
+  margin-left: 2px;
+  margin-right: 2px;
+  display: inline-block;
+  color: #597ba7;
+  font-size: 20px;
+}
+
+.simple-button:focus:hover,
+.simple-button:hover {
+  opacity: .9;
+  color: #fff !important;
+}
+
+.simple-button:focus:active,
+.simple-button:active {
+  color: rgba(255, 255, 255, .5) !important;
+}
+
+.simple-button:focus.disabled,
+.simple-button.disabled,
+.simple-button:focus[disabled],
+.simple-button[disabled] {
+  border: none;
+  background-color: rgba(0, 0, 0, .15) !important;
+  cursor: default;
+}
+
+.simple-button:focus.disabled:hover,
+.simple-button.disabled:hover,
+.simple-button:focus[disabled]:hover,
+.simple-button[disabled]:hover {
+  background-color: rgba(0, 0, 0, .15) !important;
+  opacity: .65;
+}
+
+.simple-button-faded:focus,
+.simple-button-faded {
+  background-color: #999 !important;
+}
+
+.simple-button:focus,
+.simple-button {
+  -moz-border-radius: 3px !important;
+  -webkit-border-radius: 3px !important;
+  border-radius: 3px !important;
+  outline: none !important;
+  border: none !important;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 14px;
+  margin: 8px 0 16px 0;
+  display: inline-block;
+  background-color: #416594 !important;
+}
+
+.reduced-size-simple {
+  font-size:14px;
+}
+
+.info-blocks div.row {
+  margin-top:12px;
+}
+.info-blocks>div {
+  margin-bottom:40px;
+}
+.info-blocks>div>div:first-child {
+  border-bottom:1px solid #ccc;
+  padding-bottom:8px;
+}

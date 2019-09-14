@@ -1,7 +1,4 @@
 $(function () {
-    /* 
-     Custom js file for assan
-     */
 //preloader
     $(window).preloader({
         delay: 500
@@ -51,10 +48,7 @@ $(function () {
         offset: 56, // Integer. How far to offset the scrolling anchor location in pixels
         callback: function (anchor, toggle) {} // Function to run after scrolling
     });
-    /**youtube video popup**/
-    $('.modal-video').magnificPopup({
-        type: 'iframe'
-    });
+
     $('.owl-clients').owlCarousel({
         loop: true,
         margin: 10,

@@ -7,7 +7,15 @@
               <a href="tel:{{ site.phone_link }}">{{ site.phone_disp }}</a>
             </p>
             <p class="mb0 pb10 font-base-400 sidebar-subtitle text-center">
-              <a href="tel:{{ site.phone_link }}">{{ site.email }}</a>
+            {%- case page.page_name -%}
+              {%- when 'taxes' or 'bookkeeping' or 'payroll' -%}
+                <a href="mailto:{{ site.email_tax }}">{{ site.email_tax }}</a>
+              {%- when 'mail' -%}
+                <a href="mailto:{{ site.email_mail}}">{{ site.email_mail }}</a>
+              {%- else -%}
+                <a href="mailto:{{ site.email_docs }}">{{ site.email_docs }}</a>
+              {%- endcase -%}
+              
             </p>
       </div>
       <div class="col-lg-8 text-right">
