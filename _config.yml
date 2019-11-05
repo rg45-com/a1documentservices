@@ -30,7 +30,7 @@ phone_link: +1-702-838-2235
 phone_disp: (702) 838-2235
 fax: (702) 838-3586
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://a1docs.netlify.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.a1documentservices.com" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 #github_username:  jekyll
 stat_loans: 10,000
