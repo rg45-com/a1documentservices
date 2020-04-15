@@ -61,3 +61,6 @@ exclude:
   - README.md
   - .DS_Store
   - .jekyll-cache
+
+include:
+  - _redirects
