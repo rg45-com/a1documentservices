@@ -50,7 +50,7 @@ description: Notary Public Services Las Vegas, Clark County, Nevada
 
       <p>We will travel to your home or business, hospitals, nursing homes or anywhere you would like to meet at your convenience to notarize your documents.</p>
 
-      <p>We have helped many individuals, direct lenders, escrow companies and title companies and have successfully closed over {{ site.stat_loans | thousands_separated }} loans.  These loans have inculded purchases, fixed and adjustable rate loans, refinances, home equity loans, loan modifications, e-signings and more.</p>
+      <p>We have helped many individuals, direct lenders, escrow companies and title companies and have successfully closed over {{ site.stat_loans | thousands_separated }} loans.  These loans have included purchases, fixed and adjustable rate loans, refinances, home equity loans, loan modifications, e-signings and more.</p>
 
       <p>A #1 Document Services Notaries Public are certified, background checked, bonded and insured.  We carry a $10,000 bond and $100,000 in Errors & Omissions insurance.</p>
 
@@ -88,11 +88,21 @@ description: Notary Public Services Las Vegas, Clark County, Nevada
           </ul>
           <hr>
           <p class="font-weight-bold">Areas Covered:</p>
+          <p class="mb0 font-italic">Within the Las Vegas Valley</p>
           <ul class="bullet-list">
             <li>Las Vegas</li>
             <li>North Las Vegas</li>
             <li>Henderson</li>
             <li>Boulder City</li>
+          </ul>
+          <p class="mb0 font-italic">Outside the Las Vegas Valley</p>
+          <ul class="bullet-list">
+            <li>Pahrump</li>
+            <li>Mesquite</li>
+            <li>Lake Las Vegas</li>
+            <li>Boulder City</li>
+            <li>Primm</li>
+            <li>...and others</li>
           </ul>
         </div>
       </div><!-- /row -->
@@ -156,23 +166,22 @@ description: Notary Public Services Las Vegas, Clark County, Nevada
 
           <p class="font-italic mb0">Outside Las Vegas</p>
           <ul class="bullet-list mb10">
-          <li>7:00 am - 7:00 pm  = $75</li>
-          <li>7:00 pm - 9:00 pm  = $100</li>
+          <li>7:00 am - 7:00 pm  = $100</li>
+          <li>7:00 pm - 9:00 pm  = $125</li>
           <li>9:00 pm - 12:00 am = $150</li>
           <li>12:00 am - 7:00 am = $200</li>
 
           </ul>
 
+          <p class="sidebar-subtitle font-weight-normal pb10">Remote Online Notary - $25 per signature</p>
           <p class="sidebar-subtitle font-weight-normal pb10">Acknowledgements, Jurats, Oaths - $5 each</p>
           <p class="sidebar-subtitle font-weight-normal pb10">Certified Copies - $5 each</p>
           <p class="sidebar-subtitle font-weight-normal pb10">Loan Signing - $100</p>
           <p class="sidebar-subtitle font-weight-normal pb10">Printing of Loan docs - $25</p>
           <p class="sidebar-subtitle font-weight-normal pb10">Marriage Officiant - $150</p>
-          <p class="sidebar-subtitle font-weight-normal pb10">Apostille - $80 + NV S.o.S. fees</p>
+          <p class="sidebar-subtitle font-weight-normal pb10">Apostille - $80 + NV Secretary of State fees</p>
 
-          <p class="font-italic">
-            We accept Cash or Credit Card (there is an additional $2 charge)
-          </p>
+          {%- include payment-types.html %}
         </div>
 
         <div class="col-lg-12 order-lg-1 mb40">
