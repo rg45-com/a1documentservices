@@ -35,8 +35,11 @@
               {% if page.page_name == 'payroll' %}<span class="sr-only">(current)</span>{% endif %}</a>
             <a class="dropdown-item" href="{{ '/virtual-mailbox.html' | relative_url }}">Virtual Mailbox
               {% if page.page_name == 'mail' %}<span class="sr-only">(current)</span>{% endif %}</a>
+            
+              {% comment %} <!-- removed 5/29/22 -->
             <a class="dropdown-item" href="{{ '/fingerprinting.html' | relative_url }}">Fingerprinting
               {% if page.page_name == 'fingerprinting' %}<span class="sr-only">(current)</span>{% endif %}</a>
+            {% endcomment %}
           </div>
         </li>
         {%- comment -%} <li class="nav-item">

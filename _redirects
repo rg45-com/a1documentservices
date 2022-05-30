@@ -1,7 +1,8 @@
 # Redirect with a 301
 /Contact*                     /                                     301
 /Payroll_Services*            /payroll.html                         301
-/Fingerprinting_Services*     /fingerprinting.html                  301
+/Fingerprinting_Services*     /                                     301
+/fingerprinting.html           /                                     301
 /Notary_Public_Services*      /mobile-notary-public-las-vegas.html  301
 /Income_Tax_Services*         /income-tax-services.html             301
 

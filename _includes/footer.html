@@ -6,6 +6,10 @@
             <p class="mb0 pb5 font-base-400 sidebar-subtitle text-center">
               <a href="tel:{{ site.phone_link }}">{{ site.phone_disp }}</a>
             </p>
+            <p class="mb0 font-base-400 text-center">
+              6881 W Charleston Blvd, Ste A<br/>
+              Las Vegas, NV  89117
+            </p>
             <p class="mb0 pb10 font-base-400 sidebar-subtitle text-center">
             {%- case page.page_name -%}
               {%- when 'taxes' or 'bookkeeping' or 'payroll' -%}
@@ -35,9 +39,11 @@
             <li class="list-inline-item">
                 <a href="{{ "/virtual-mailbox.html" | relative_url }}">Mail Service</a>
             </li>
+            {% comment %} <!-- removed 5/29/22 -->
             <li class="list-inline-item">
                 <a href="{{ "/fingerprinting.html" | relative_url }}">Fingerprinting</a>
             </li>
+            {% endcomment %}
         </ul>
       </div>
       <div class="col-sm-12">
