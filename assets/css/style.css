@@ -69,6 +69,8 @@ hr {
   font-size: 80%;
   font-weight: 400; }
 
+
+
 ul, ol {
   margin: 0 0 1.5em 0; }
 
@@ -1638,6 +1640,9 @@ Footer style
   border-bottom: 1px solid #ccc;
   font-weight: bold;
 }
+.service-plan .title span {
+  font-style: italic;
+  }
 
 .service-plan .info1 {
   background-color: #f8f8f8;
